@@ -1,0 +1,13 @@
+minikube start   #It is an environment to execute kubectl
+kubectl get node #To see about nodes
+kubectl get pod  # displays all the pods
+kubectl get svc  #displays all services
+kubectl get secret  #displays all secrets
+kubectl apply -f secret.yaml  #configure secrets
+kubectl apply -f mongo-config.yaml  #configure mongo config
+kubectl apply -f mongo-app.yaml  #configure mongo app
+kubectl apply -f web-app.yaml   #configure web-app
+kubectl delete service --all   #deletes all services
+kubectl delete deployment --all  #deletes all services
+kubectl delete secret --all   #deletes all secrets
+minikube service webapp-service #starts the service
